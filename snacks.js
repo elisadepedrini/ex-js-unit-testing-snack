@@ -6,8 +6,8 @@ function getInitials(name) {
     return nameJoin
 }
 
-function createSlug(string) {
-    return string.toLowerCase().split(" ").join("-")
+function createSlug(slug) {
+    return slug.toLowerCase().split(" ").join("-")
 }
 
 
@@ -16,8 +16,15 @@ function average(numberArray) {
 }
 
 
+function isPalindrome(palindrome) {
+    const stringLower = palindrome.toLowerCase()
+    const invertedString = stringLower.split("").reverse().join("")
+    return stringLower === invertedString
+}
+
 module.exports = {
     getInitials,
     createSlug,
-    average
+    average,
+    isPalindrome
 }

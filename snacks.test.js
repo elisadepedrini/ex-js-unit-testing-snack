@@ -1,4 +1,4 @@
-const { getInitials, createSlug, average } = require("./snacks.js")
+const { getInitials, createSlug, average, isPalindrome } = require("./snacks.js")
 
 
 
@@ -15,4 +15,9 @@ test("La funzione createSlug restituisce una stringa in lowercase.", () => {
 test("La funzione average calcola la media aritmetica di un array di numeri.", () => {
     const number = [2, 3, 8, 4]
     expect(average(number)).toBe(4.25)
+})
+
+
+test("La funzione isPalindrome verifica se una stringa è un palindromo.", () => {
+    expect(isPalindrome("oro")).toBeTruthy()
 })
