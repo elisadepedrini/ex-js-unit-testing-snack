@@ -11,8 +11,13 @@ function createSlug(string) {
 }
 
 
+function average(numberArray) {
+    return numberArray.reduce((acc, curr) => acc + curr, 0) / numberArray.length
+}
+
 
 module.exports = {
     getInitials,
-    createSlug
+    createSlug,
+    average
 }
