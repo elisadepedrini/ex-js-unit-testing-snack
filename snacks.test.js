@@ -8,7 +8,7 @@ test("La funzione getInitials restituisce le iniziali di un nome completo.", () 
 
 
 test("La funzione createSlug restituisce una stringa in lowercase.", () => {
-    expect(createSlug("STO STUDIANDO UNIT TESTING")).toBe("sto studiando unit testing")
+    expect(createSlug("QUESTO È UN TEST")).toBe("questo-è-un-test")
 })
 
 

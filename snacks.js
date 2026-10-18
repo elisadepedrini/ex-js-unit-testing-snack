@@ -7,7 +7,7 @@ function getInitials(name) {
 }
 
 function createSlug(string) {
-    return string.toLowerCase()
+    return string.toLowerCase().split(" ").join("-")
 }
 
 
