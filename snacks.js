@@ -7,6 +7,9 @@ function getInitials(name) {
 }
 
 function createSlug(slug) {
+    if(!slug || typeof(slug) !== "string") {
+        throw new Error("Titolo vuoto o non valido")
+    }
     return slug.toLowerCase().split(" ").join("-")
 }
 

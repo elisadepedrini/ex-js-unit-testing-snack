@@ -7,8 +7,10 @@ test("La funzione getInitials restituisce le iniziali di un nome completo.", () 
 })
 
 
-test("La funzione createSlug restituisce una stringa in lowercase.", () => {
+test("La funzione createSlug restituisce una stringa in lowercase, sostituisce gli spazi con - e lancia un errore se il titolo è vuoto o non valido.", () => {
     expect(createSlug("QUESTO È UN TEST")).toBe("questo-è-un-test")
+    expect(() => createSlug("")).toThrow()
+    expect(() => createSlug(null)).toThrow()
 })
 
 
